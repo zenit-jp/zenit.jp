@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZenIT with IchigoSoda for Beginners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="bar"><a class="logo" href="../index.html">ZenIT<span>禅IT</span></a><nav><a href="../about.html">About</a><a href="../team.html">Team</a><a href="../events.html">Events</a><a href="../blog.html">Blog</a><a href="../gallery.html">Gallery</a><a href="../ja/about.html">日本語</a></nav></div></header>
+<main class="post">
+<p class="back"><a href="../blog.html">&larr; All posts</a></p>
+<h1 class="t">ZenIT with IchigoSoda for Beginners</h1><p class="meta">2018-09-22</p>
+<p>---From <a href="http://fukuno.jig.jp/2252" rel="noopener">Taisuke Fukuno&#x27;s blog post</a>---</p>
+<p>Eiheiji Town&#x27;s <a href="https://amilkhanzada.com/" rel="noopener">Evolution Ambassador Amil</a> gave a Zen x Programming workshop, combining Silicon Valley Extreme Programming style and Zen. He did at Eiheiji Town&#x27;s Four Seasons Forest Cultural Center&#x27;s <a href="https://www.town.eiheiji.lg.jp/600/603/p002119.html" rel="noopener">Sanshoukaku</a> room.</p>
+<p>永平寺町エボリューション大使<a href="https://amilkhanzada.com/" rel="noopener">あみる</a>による、<a href="https://amilkh.github.io/" rel="noopener">Zen x Programming</a>ワークショップ。</p>
+<p>シリコンバレースタイルと禅との融合永平寺町、四季の森会館、永平寺の傘松閣を復元した「<a href="https://www.town.eiheiji.lg.jp/600/603/p002119.html" rel="noopener">旧傘松閣資料館</a>」が会場！</p>
+<figure><img src="../img/02976c_f661c5121e134b47a8f990252a211003.jpg" alt="" loading="lazy"></figure>
+<p>Over 3 hours (2pm-5pm), we enjoyed a mix of programming and Zazen meditation.</p>
+<p>14時〜17時まで、たっぷり3時間、座禅も交えたペアプログラミング、楽しんでくれました！</p>
+
+<p>IT, AI, robots, seem far from humans, but actually humans made them.</p>
+<p>The best match must be the Zen x Silicon Valley style which keeps our mind and body healthy.</p>
+<p>IT、AI、ロボット、人から遠いようで実は人が中心。</p>
+<p>心身を健康にする禅とシリコンバレーでのプログラミングスタイルはベストマッチ。</p>
+<figure><img src="../img/02976c_126d5ca5247b4479a0221c86d1c81a5e.jpg" srcset="../img/02976c_126d5ca5247b4479a0221c86d1c81a5e-w480.jpg 480w, ../img/02976c_126d5ca5247b4479a0221c86d1c81a5e-w960.jpg 960w, ../img/02976c_126d5ca5247b4479a0221c86d1c81a5e.jpg 1200w" sizes="(max-width:700px) 100vw, 720px" alt="" loading="lazy"></figure>
+<p>Using two monitors, two keyboards, and one IchigoJam with two people at the same time is Silicon Valley Pair Programming style. We did a neat trick by using one IchigoJam to relay the keyboard and video signals to the other one. (<a href="" rel="noopener">Workshop Slides PDF</a>)</p>
+<p>2台のモニター、2台のキーボードで1台のIchigoJamを二人で同時に使うのが、シリコンバレーのペアプログラミングスタイル。 1台のIchigoJamを中継用にちょっと細工します。（<a href="" rel="noopener">ワークショップ、スライド PDF</a>）</p>
+<figure><img src="../img/02976c_efc418892e114a4d961eac5855e31bc7.jpg" alt="" loading="lazy"></figure>
+<figure><img src="../img/02976c_8ba98327a5fb4998bdedcb7ef2dd6184.jpg" alt="" loading="lazy"></figure>
+<figure><img src="../img/02976c_e77ce480802a442da5ba26430c0902d2.jpg" alt="" loading="lazy"></figure>
+<figure><img src="../img/02976c_a98ae0ca35364bc1ad346714a4a2090f.jpg" alt="" loading="lazy"></figure>
+<figure><img src="../img/02976c_b82e8c68fe8643eca7c40a3a0f437315.jpg" alt="" loading="lazy"></figure>
+<p>The ESC key does not work on IchigoJam A because the program to transfer the keystrokes would be terminated (at which point you would have to press F5 to run it again).</p>
+<p>IchigoJam A&#x27;s left and right keys toggle the character&#x27;s movement with two presses, which is a bit strange, so the game should be played with IchigoJam B.</p>
+<p>We can fix it by changing the program to use INKEY instead of BTN.</p>
+<p>36 K=INKEY():X=X-(K=28)+(K=29)</p>
+<p>ESCキーは、IchigoJam Aでは効きません（キー転送用のプログラムが終わってしまうので、再度F5で動かそう）</p>
+<p>IchigoJam A の左右キーは2度押して戻るトグル式となってちょっと操作感が違うので、ゲームするなら B で！ 下記のようにBTNをINKEYに変えることで、同じ操作感になります。</p>
+<p>36 K=INKEY():X=X-(K=28)+(K=29)</p>
+<figure><img src="../img/02976c_93f929fef3db4b80a0839449459828ad.jpg" alt="" loading="lazy"></figure>
+<p>Having fun doing pair programming to make a game for the first time!</p>
+<p>ペアで楽しむ、ゲームづくりではじめるプログラミング！</p>
+<figure><img src="../img/02976c_74dc5f9924dd4dc7b40ed44c6a3103d7.jpg" alt="" loading="lazy"></figure>
+<p>You can also make VR to change what you see with programming! We used <a href="https://www.oculus.com/go/" rel="noopener">Oculus Go</a> and <a href="http://fukuno.jig.jp/2182" rel="noopener">Smartphone MR</a> during the break time.</p>
+<p>VRや、視界だってプログラミングできちゃうよ！と休み時間中に <a href="https://www.oculus.com/go/" rel="noopener">Oculus Go</a> や、<a href="http://fukuno.jig.jp/2182" rel="noopener">スマホMR</a>の体験会。</p>
+<figure><img src="../img/02976c_98b3640a83d14cbaa8bf5faf134d4883.jpg" alt="" loading="lazy"></figure>
+<p>The huge Japanese style room had fantastic pictures on the ceiling!</p>
+<p>160畳の広大な和室、見事な天井絵！</p>
+<figure><img src="../img/02976c_6573f579667e45bba81c06772208d312.jpg" alt="" loading="lazy"></figure>
+<p>Perfect in Autumn... The Four Seasons Forest Culture Center.</p>
+<p>秋晴れが気持ちいい、四季の森会館でした。</p>
+</main>
+<footer><div class="fwrap"><div><a class="flogo" href="../index.html">ZenIT<span>禅IT</span></a><p class="fsub">2018-2019 &middot; Eiheiji, Fukui</p></div><div><p class="fl">Contact <a href="mailto:info@zenit.jp">info@ZenIT.jp</a></p><p>Eiheiji town, Fukui, Japan</p></div><div class="fsoc"><a class="ic" href="https://www.facebook.com/groups/392645754822716/" aria-label="Facebook" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.3-.2-2.6-.2c-2.6 0-4.3 1.6-4.3 4.4v2.5H7.2v3.3H10V22z"/></svg></a></div></div></footer>
+</body>
+</html>
