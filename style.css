@@ -108,6 +108,8 @@ main figure img{border-radius:10px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:24px}
 .card{text-decoration:none;color:inherit;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--rule);
   border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(60,45,20,.06);transition:transform .15s,box-shadow .15s}
+.card a.cl{text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.card span a{color:var(--accent);font-weight:600;text-decoration:none}
 .card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(60,45,20,.12)}
 .card img,.card .ph{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--soft)}
 .card .ph{display:flex;align-items:center;justify-content:center;font:700 34px var(--serif);color:var(--gold);background:var(--night)}
